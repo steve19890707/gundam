@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.85.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://johnson2heng.github.io/three.js-demo/lib/threebsp.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Gundam</title>
+</head>
+<body style="overflow:hidden">
+    <ul class="Btnlist" id="Btnlist">
+        <li>BODY</li>
+        <li><button id="bodyUP">UP</button></li>
+        <li><button id="bodyDown">DOWN</button></li>
+        <li><button id="bodyFlipLeft">FLIP(LEFT)</button></li>
+        <li><button id="bodyFlipRight">FLIP(RIGHT)</button></li>
+        <li>HEAD</li>
+        <li><button id="headX">UP & DOWN</button></li>
+        <li><button id="headLeft">TO LEFT</button></li>
+        <li><button id="headRight">TO RIGHT</button></li>
+        <li class="push">WAIST</li>
+        <li><button id="waistLeft">TO LEFT</button></li>
+        <li><button id="waistRight">TO RIGHT</button></li>
+        <li class="push">HAND(LEFT)</li>
+        <li><button id="handAllLeft">ALL</button></li>
+        <li><button id="handAllSideLeft">SIDE</button></li>
+        <li><button id="handArmLeft">ARM</button></li>
+        <li><button id="handWristLeft">WRIST</button></li>
+        <li><button id="handWristTwistLeft">WRIST(TWIST)</button></li>
+        <li><button id="handPlamLeft">PLAM</button></li>
+        <li class="push">HAND(RIGHT)</li>
+        <li><button id="handAllRight">ALL</button></li>
+        <li><button id="handAllSideRight">SIDE</button></li>
+        <li><button id="handArmRight">ARM</button></li>
+        <li><button id="handWristRight">WRIST</button></li>
+        <li><button id="handWristTwistRight">WRIST(TWIST)</button></li>
+        <li><button id="handPlamRight">PLAM</button></li>
+        <li class="push">LEG(LEFT)</li>
+        <li><button id="legTighLeft">THIGH</button></li>
+        <li><button id="legCalfLeft">CALF</button></li>
+        <li><button id="legFootLeft">FOOT</button></li>
+        <li class="push">LEG(RIGHT)</li>
+        <li><button id="legTighRight">THIGH</button></li>
+        <li><button id="legCalfRight">CALF</button></li>
+        <li><button id="legFootRight">FOOT</button></li>
+        <li class="push">LIGHTING</li>
+        <li><button id="lighting">ON & OFF</button></li>
+        <li class="push">COLOR(MAIN)</li>
+        <li class="colors">
+            <ol>
+                <li class="redColor" id="main_redColor"></li>
+                <li class="blueColor" id="main_blueColor"></li>
+                <li class="greenColor" id="main_greenColor"></li>
+                <li class="whiteColor" id="main_whiteColor"></li>
+                <li class="grayColor" id="main_grayColor"></li>
+                <li class="yellowColor" id="main_yellowColor"></li>
+            </ol>
+        </li>
+        <li class="push">COLOR(SECOND)</li>
+        <li class="colors">
+            <ol>
+                <li class="redColor" id="second_redColor"></li>
+                <li class="blueColor" id="second_blueColor"></li>
+                <li class="greenColor" id="second_greenColor"></li>
+                <li class="whiteColor" id="second_whiteColor"></li>
+                <li class="grayColor" id="second_grayColor"></li>
+                <li class="yellowColor" id="second_yellowColor"></li>
+            </ol>
+        </li>
+        <li class="push">COLOR(LIGHT)</li>
+        <li class="last colors">
+            <ol>
+                <li class="redColor" id="light_redColor"></li>
+                <li class="greenColor2" id="light_greenColor"></li>
+                <li class="yellowColor" id="light_yellowColor"></li>
+            </ol>
+        </li>
+    </ul>
+    <div class="logo"></div>
+    <div id="cover" class="cover"><button id="startBtn">START</button></div>
+    <script src="js/main.js"></script>
+</body>
+</html>

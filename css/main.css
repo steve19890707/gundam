@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    position: relative;
+    top:0;
+    background: url(../img/background.jpg)no-repeat;
+    background-color: #040815;
+    background-size: 100%;
+}
+.Btnlist {
+    position: absolute;
+    top:0;
+    right: 0;
+    padding:2% 3%;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(14, 21, 49, 0.6);
+    margin: 0;
+}
+.Btnlist li {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.Btnlist .last {
+    padding-bottom: 100px;
+}
+.Btnlist li button {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.Btnlist li button:hover {
+    color: rgb(255, 247, 0);
+    border: 1px solid rgb(255, 247, 0);
+}
+.Btnlist .push {
+    padding-top: 20px;
+}
+.unclick {
+    pointer-events: none;
+}
+.Btnlist li .unclick{
+    color: #9999;
+    border:  1px solid #9999
+}
+.Btnlist .colors ol {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.Btnlist .colors li {
+    display: inline-block;
+    width: 30%;
+    margin: 1.515%;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+.Btnlist .colors li:hover{
+    border: 1px solid #fff;
+}
+.Btnlist .colors ol .redColor{
+    background: #fc0000;
+}
+.Btnlist .colors ol .blueColor{
+    background: #27408c;
+}
+.Btnlist .colors ol .greenColor{
+    background: #4CAF4B;
+}
+.Btnlist .colors ol .greenColor2{
+    background: #00ff7f;
+}
+.Btnlist .colors ol .whiteColor{
+    background: #FBFFEB;
+}
+.Btnlist .colors ol .grayColor{
+    background: #363A3A;
+}
+.Btnlist .colors ol .yellowColor{
+    background: #ffff00;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3% 0 0 3%;
+    background: url(../img/logo.png)no-repeat;
+    background-size: 100%;
+    width: 15%;
+    padding-bottom: 3.5%;
+    z-index: 99;
+}
+.cover {
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.cover button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cover button:hover {
+    color: rgb(255, 247, 0);
+    border: 1px solid rgb(255, 247, 0);
+}
+
+.toggle {
+    animation: open 1s;
+}
+
+@keyframes open {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+html {
+    font-family: "微軟正黑體";
+}
